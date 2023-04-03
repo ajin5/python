@@ -1,0 +1,1 @@
+web: gunicorn chinninambi.wsgi --log file -
