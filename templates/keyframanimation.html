@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      @keyframes slideInLeft {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      .hea {
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-name: slideInLeft;
+        background: #c0f013;
+        /* padding-bottom: 40px; */
+      }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, Helvetica, Sans Serif;
+      }
+      a {
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 10px;
+        color: #fff;
+      }
+    </style>
+ 
+  </head>
+  <body>
+    <header class="hea">
+        <h2 style="text-align: center; font-size: 54px;" >About Chinninambi</h2>
+        <div class="col-md-6">
+            <figure class="alignnone">
+                <img src="{% static 'images/CNE LOGO.png' %}" alt="">
+            </figure>
+        </div>
+        <div class="col-md-6">
+            <p>CNE started in 2019 to distribute known brands of products existing in the market. As the
+                current trend has shifted to natural Ayurveda and organic products, the company ventured
+                to personal care and cure products.
+                All the products are outsourced from a reputed house of manufacturing units. They are
+                scientifically researched in reputed labs. Safety and efficacy are clinically tested.
+                The company works on identifying the active molecules that enhance the properties of the
+                ingredients of products, so as to achieve the optimum benefits. Hence the formulations
+                are unique and efficient.
+            </p>
+        </div>
+    </header>
+  </body>
+</html>

@@ -7,11 +7,32 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<!-- <style>
+	.fadeinout
+{
+  animation: fadeinout 4s infinite;
+}
+
+@keyframes fadeinout
+{
+  0%{
+    opacity:0;
+  }
+  50%
+  {
+    opacity:1;
+  }
+  100%
+  {
+    opacity:0;
+  }
+}
+	</style> -->
 </head>
 
 <body>
 	{% include 'header.html' %}
-	<div class="site-wrapper">
 
 
 
@@ -24,104 +45,165 @@
 			<section class="page-content">
 				<div class="container">
 
+					{% include 'keyframanimation.html' %}
+
 					<div class="row">
+						<h2 style="font-size: 54px; text-align: center; color: brown;">Our vission</h2>
+						
+						<div class="col-md-6">
+							
+
+
+							<p>To build a premier, world-class organization in order to cater to the needs of the common man.
+
+								Manoeuvring the human resources with innovation, integrity, credibility, quality, and quantitative values.
+								
+								To revive the historic significance of a hale and a healthy individual and systematically align the standards, built at the optimum level.
+								
+								Ensuring and achieving fundamental steps in building a community to establish an exclusive, and elevated standard of healthcare.
+								
+								
+							</p>
+						</div>
+							<div class="col-md-6">
+								<figure class="alignnone">
+									<img src="{% static 'images/CNE LOGO.png' %}" alt="">
+								</figure>
+							</div>
+
+							<!-- <div class="spacer-sm"></div>
+							
+							<a href="#" class="btn btn-default">Read More</a> -->
+						
+					</div>
+					<div class="row">
+						<h2 style="font-size: 54px; text-align: center; color: rgb(73, 225, 242);">Our Mission</h2>
+						
+						<div class="col-md-6">
+							
+
+
+							<p>To build a premier, world-class organization in order to cater to the needs of the common man.
+
+								Manoeuvring the human resources with innovation, integrity, credibility, quality, and quantitative values.
+								
+								To revive the historic significance of a hale and a healthy individual and systematically align the standards, built at the optimum level.
+								
+								Ensuring and achieving fundamental steps in building a community to establish an exclusive, and elevated standard of healthcare.
+								
+								
+							</p>
+						</div>
+							<div class="col-md-6">
+								<figure class="alignnone">
+									<img src="{% static 'images/CNE LOGO.png' %}" alt="">
+								</figure>
+							</div>
+
+							<!-- <div class="spacer-sm"></div>
+							
+							<a href="#" class="btn btn-default">Read More</a> -->
+						
+					</div>
+
+					<!-- <div class="row">
 						<div class="col-md-6">
 							<figure class="alignnone">
 								<img src="{% static 'images/CNE LOGO.png' %}" alt="">
 							</figure>
 						</div>
 						<div class="col-md-6">
-							<h2>About Chinninambi</h2>
+							<h2>Our vision</h2>
 
 
-							<p>CNE started in 2019 to distribute known brands of products existing in the market. As the
-								current trend has shifted to natural Ayurveda and organic products, the company ventured
-								to personal care and cure products.
-								All the products are outsourced from a reputed house of manufacturing units. They are
-								scientifically researched in reputed labs. Safety and efficacy are clinically tested.
-								The company works on identifying the active molecules that enhance the properties of the
-								ingredients of products, so as to achieve the optimum benefits. Hence the formulations
-								are unique and efficient.
+							<p>To build a premier, world-class organization in order to cater to the needs of the common man.
+
+								Manoeuvring the human resources with innovation, integrity, credibility, quality, and quantitative values.
+								
+								To revive the historic significance of a hale and a healthy individual and systematically align the standards, built at the optimum level.
+								
+								Ensuring and achieving fundamental steps in building a community to establish an exclusive, and elevated standard of healthcare.
+								
+								
 							</p>
 
-							<!-- <div class="spacer-sm"></div>
+							 <div class="spacer-sm"></div>
 							
 							<a href="#" class="btn btn-default">Read More</a> -->
-						</div>
-					</div>
-
-					<hr class="lg">
-
+						<!-- </div>
+					</div>  -->
+                 <!-- <section>
+					<h2 style="text-align: center;">Our Core Values</h2>
 					<div class="row">
-						<div class="col-md-4">
-							<div class="title-accent">
-								<h2>Our Vission</h2>
-							</div>
-							<!-- <span class="dropcap dropcap__rounded">1</span>
-							<h6>Lorem Ipsum Dolor Sit Amet</h6> -->
-							<p>To build a premier, world-class organization in order
-								to cater to the needs of the common man.
-							</p>
-
-							<!-- <div class="spacer-sm"></div>  -->
-
-							<!-- <span class="dropcap dropcap__rounded">2</span>
-							<h6>Donec fermentum eros</h6> -->
-							<p>Manoeuvring the human resources with innovation,
-								integrity, credibility, quality, and quantitative values.
-							</p>
-
-							<!-- <div class="spacer-sm"></div> -->
-
-							<!-- <span class="dropcap dropcap__rounded">3</span>
-							<h6>Praesent ante</h6> -->
-							<p>To revive the historic significance of a hale and a
-								healthy individual and systematically align the
-								standards, built at the optimum level.
-							</p>
-
-							<!-- <div class="spacer-sm"></div> -->
-
-							<!-- <span class="dropcap dropcap__rounded">3</span>
-							<h6>Praesent ante</h6> -->
-							<p>Ensuring and achieving fundamental steps in
-								building a community to establish an exclusive, and
-								elevated standard of healthcare.
-
-							</p>
-
+						<div class="col-md-6">
+							<figure class="alignnone">
+								<img class="fadeinout" src="{% static 'images/CNE LOGO.png' %}" alt="">
+							</figure>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-6">
+							
+
+
+							<p>To build a premier, world-class organization in order to cater to the needs of the common man.
+
+								Manoeuvring the human resources with innovation, integrity, credibility, quality, and quantitative values.
+								
+								To revive the historic significance of a hale and a healthy individual and systematically align the standards, built at the optimum level.
+								
+								Ensuring and achieving fundamental steps in building a community to establish an exclusive, and elevated standard of healthcare.
+								
+								
+							</p>
+
+							 <div class="spacer-sm"></div>
+							
+							<a href="#" class="btn btn-default">Read More</a> -->
+						<!-- </div>
+					</div>
+					
+					
+
+					
+
+					
+
+					
+
+					
+			
+				</section>  -->
+					
+						<!-- <div class="col-md-4">
 							<hr class="visible-sm visible-xs lg">
 							<div class="title-accent">
 								<h2>Our Mission</h2>
 							</div>
-							<!-- <h6 class="text-muted">Fusce fringilla porttitor iaculis. Sed quam libero, adipiscing sed
+							 <h6 class="text-muted">Fusce fringilla porttitor iaculis. Sed quam libero, adipiscing sed
 								erat id, euismod nunc.</h6> -->
-							<p>To source value-added products built with our heritage and
+							<!-- <p>To source value-added products built with our heritage and
 								upgrade them to today's standards.
-							</p>
+							</p> -->
 
 							<!-- <div class="spacer-sm"></div> -->
 
 							<!-- <span class="dropcap dropcap__rounded">3</span>
 								<h6>Praesent ante</h6> -->
-							<p>To make it available to consumers from different walks of life.
+							<!-- <p>To make it available to consumers from different walks of life.
 
-							</p>
+							</p> -->
 
 							<!-- <div class="spacer-sm"></div> -->
 
 							<!-- <span class="dropcap dropcap__rounded">3</span>
 								<h6>Praesent ante</h6> -->
-							<p>To set state of art standards for products packaging,
+							<!-- <p>To set state of art standards for products packaging,
 								distribution, E-commerce and innovative and new marketing methods and tools.
 
 
-							</p>
+							</p> -->
 
 
-						</div>
+						<!-- </div> -->
 						<!-- <div class="col-md-4">
 							<hr class="visible-sm visible-xs lg">
 							<div class="title-accent">
@@ -163,11 +245,20 @@
 								</div>
 							</div>
 						</div>	 -->
-
-						<div class="col-md-4">
-							<div class="title-accent">
-								<h2>Our Core Values</h2>
+<section>
+						<div class="row">
+							<h2 style="font-size: 54px; text-align: center; color: rgb(241, 232, 43);">Our Core Values</h2>
+							<div class="col-md-6">
+								<div class="title-accent">
+										<figure class="alignnone">
+											<img class="fadeinout" src="{% static 'images/CNE LOGO.png' %}" alt="">
+										</figure>
+									</div>
+	
 							</div>
+
+						<div class="col-md-6">
+						
 							<!-- <span class="dropcap dropcap__rounded">1</span>
 							<h6>Lorem Ipsum Dolor Sit Amet</h6> -->
 							<p>Delivering products that would be the front
@@ -205,23 +296,22 @@
 
 						</div>
 					</div>
-
-					<hr class="lg">
+				</section>
 
 					<div class="title-accent">
-						<h3>Our Team</h3>
+						<b><h2 style="text-align: center; font-size: 40px;">Management</h2></b>
 					</div>
 					<ul class="team-list row">
-						<li class="team-item col-md-4">
+						<li class="team-item col-md-6">
 							<figure class="alignnone">
 								<a href="#"><img src="../static/images/personalprofiles/number-258-red-3d-illustration-260nw-2218017511.webp" alt=""></a>
 							</figure>
 							<header class="team-head">
-								<span class="team-head-info">CEO</span>
-								<h4 class="team-name">Mr. Arjun Rajkumar</h4>
+								<h2><span class="team-head-info" style="text-align: center;">CEO</span></h2>
+								<h4 class="team-name" style="text-align: center;">Mr. Arjun Rajkumar</h4>
 								<ul class="team-social list-unstyled">
-									<li>
-										<i class="fa fa-envelope-o"></i><a
+									<li style="text-align: center;">
+										<i class="fa fa-envelope-o"></i><a 
 											href="mailto:johndoe@dan-fisher.com">arjun@chinninambi.com</a>
 									</li>
 									<!-- <li>
@@ -264,19 +354,19 @@
 									straight out in the global market.</p>
 							</div>
 						</li>
-						<li class="team-item col-md-4">
+						<li class="team-item col-md-6">
 							<figure class="alignnone">
 								<a href="#"><img src="../static/images/personalprofiles/number-258-red-3d-illustration-260nw-2218017511.webp" class="imgsize" alt=""></a>
 							</figure>
 							<header class="team-head">
-								<span class="team-head-info">COO</span>
-								<h4 class="team-name">Mrs.Krishika</h4>
+								<h2><span class="team-head-info" style="text-align: center;">COO</span></h2>
+								<h4 class="team-name" style="text-align: center;">Mrs.Krishika</h4>
 								<ul class="team-social list-unstyled">
-									<li>
+									<li style="text-align: center;">
 										<i class="fa fa-envelope-o"></i><a
 											href="mailto:mikesmith@dan-fisher.com">krishika@gmail.com</a>
 									</li>
-									<!-- <li>
+									<!-- <li style="text-align: center;">
 										<i class="fa fa-skype"></i><a href="#">mike_smith</a>
 									</li> -->
 								</ul>
@@ -320,43 +410,7 @@
 								</p>
 							</div>
 						</li>
-						<li class="team-item col-md-4">
-							<figure class="alignnone">
-								<a href="#"><img class ="imgsize" src="../static/images/personalprofiles/number-258-red-3d-illustration-260nw-2218017511.webp" alt=""></a>
-							</figure>
-							<header class="team-head">
-								<span class="team-head-info">Brand Promoter</span>
-								<h4 class="team-name">Senthur Vasan</h4>
-								<ul class="team-social list-unstyled">
-									<li>
-										<i class="fa fa-envelope-o"></i><a
-											href="mailto:sashagray@dan-fisher.com">vasan@gmail.com</a>
-									</li>
-									<!-- <li>
-										<i class="fa fa-skype"></i><a href="#">sasha_gray</a>
-									</li> -->
-								</ul>
-							</header>
-							<div class="team-excerpt">
-								<p>
-									A graduate of Mathematics who later studied in Government College of Fine
-									Art of the School, Mr. Senthurvasan is a senior partner of our CNE family.
-									He is designated for guiding the companies in all-round areas on the
-									account of being experienced with reputed organizations like Velvette and
-									big Media companies like Mudra, Hindustan Thompson. etc. He has sorted
-									out insights and vast knowledge in developing products with scientific
-									research to commercial aspects like patents and Trademarks. Thanks to his
-									guru Dr. CK Rajkumar, who was a university by himself, we could safely
-									quote that product designing and packaging are his portfolios. Not only that,
-									all in-house promotions media are developed with his supervision. As a
-									guardian, he takes care of the overall organization.
-									The staff and team members of the company are run by a group of loyal and
-									efficient staff, they value integrity and honesty. They are happy to be part of
-									this organization and look upon Arjun Rajkumar, the leader to travel thru
-									great heights!
-								</p>
-							</div>
-						</li>
+						
 						<!-- <li class="team-item col-md-3">
 							<figure class="alignnone">
 								<a href="#"><img src="http://placehold.it/258x258" alt=""></a>

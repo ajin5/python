@@ -1,6 +1,6 @@
 
-/* html,
-body {
+
+/* body {
     margin: 0;
     padding: 0;
     background: #000;
@@ -27,12 +27,13 @@ p {
  .slick-slider button{ 
     position: absolute;
     top: 10%;
+    bottom: 10%;
     background: #fff;
     border: none;
     outline: none;
     z-index:100;
-    /* width: 50px;
-    height: 5px;  */
+    width: 50px;
+    height: 5px; 
     /* color: transparent; */
     /* cursor: pointer; */
     /* transform: translate(0%,-70%); */
