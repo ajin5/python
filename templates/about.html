@@ -29,6 +29,75 @@
   }
 }
 	</style> -->
+
+	<style>
+	
+*{
+	margin: 0;
+	padding: 0;
+}
+
+		.ba{
+			background-image: url('../static/images/backgroundimages/local-brands.webp');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+			
+			margin: 70px -100% 70px -100%;
+	padding: 20% 100% 0 100%;
+	background-position: 0 0;
+	
+	-webkit-background-size: cover;
+	
+	position: relative;
+	
+		}
+		.viba{
+			background-image: url('../static/images/backgroundimages/60053f678209ee26eaaf73a0_vision.webp');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+			margin: 70px -100% 70px -100%;
+	padding: 0 100% 0 100%;
+	
+	background-position: 0 0;
+	
+	-webkit-background-size: cover;
+	
+	position: relative;
+		}
+		.value{
+			background-image: url('../static/images/backgroundimages/local-brands.webp');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+			
+			/* margin: 70px -100% 70px -100%;
+	padding: 20% 100% 0 100%; */
+	background-position: 0 0;
+	
+	-webkit-background-size: cover;
+	
+	position: relative;
+	
+		}
+
+		.manage{
+			background-image: url('../static/images/backgroundimages/950x534-blue-abstract-noise-free-website-background-image.webp');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+			
+			/* margin: 70px -100% 70px -100%;
+	padding: 20% 100% 0 100%; */
+	background-position: 0 0;
+	
+	-webkit-background-size: cover;
+	
+	position: relative;
+		}
+		
+	</style>
 </head>
 
 <body>
@@ -42,19 +111,20 @@
 
 
 			<!-- Page Content -->
-			<section class="page-content">
+			<section class="page-content" class="gap">
 				<div class="container">
 
 					{% include 'keyframanimation.html' %}
-
+					</div>
+<section class="viba">
 					<div class="row">
-						<h2 style="font-size: 54px; text-align: center; color: brown;">Our vission</h2>
+						<h2 style="font-size: 89px; font-weight: 100; text-align: center; color: rgb(252, 18, 18);">Our vision</h2>
 						
 						<div class="col-md-6">
 							
 
 
-							<p>To build a premier, world-class organization in order to cater to the needs of the common man.
+							<p style="padding-bottom: 200px; color: rgb(255, 255, 255); margin: 20px;">To build a premier, world-class organization in order to cater to the needs of the common man.
 
 								Manoeuvring the human resources with innovation, integrity, credibility, quality, and quantitative values.
 								
@@ -66,8 +136,9 @@
 							</p>
 						</div>
 							<div class="col-md-6">
-								<figure class="alignnone">
-									<img src="{% static 'images/CNE LOGO.png' %}" alt="">
+								<figure>
+									<!-- <img src="{% static 'images/backgroundimages/png-clipart-vision-statement-mission-statement-vision-statement-text-logo' %}" alt=""> -->
+									<img src="../static/images/backgroundimages/Vision-Transparent-PNG.png">
 								</figure>
 							</div>
 
@@ -77,13 +148,50 @@
 						
 					</div>
 					<div class="row">
+						<h2 style="font-size: 54px; text-align: center; color: rgb(236, 222, 25);">Our Mission</h2>
+						
+						<div class="col-md-6">
+							
+
+
+							<p style="padding-bottom: 200px; color: rgb(255, 255, 255); margin: 20px;">To source value-added products built with our heritage and
+								upgrade them to today's standards.
+								
+								To make it available to consumers from different walks of life.
+								
+								To set state of art standards for products packaging,
+								distribution, E-commerce and innovative and new marketing
+								methods and tools.
+								
+								
+							</p>
+						</div>
+							<div class="col-md-6">
+								<figure>
+									<!-- <img src="{% static 'images/backgroundimages/png-clipart-vision-statement-mission-statement-vision-statement-text-logo' %}" alt=""> -->
+									<img src="../static/images/backgroundimages/Mission-Free-Download-PNG.png">
+								</figure>
+							</div>
+
+							<!-- <div class="spacer-sm"></div>
+							
+							<a href="#" class="btn btn-default">Read More</a> -->
+						
+					</div>
+				</section>
+					<!-- <section class="ba">
 						<h2 style="font-size: 54px; text-align: center; color: rgb(73, 225, 242);">Our Mission</h2>
-						
-						<div class="col-md-6">
+						<div class="row">
+							<div>
+								<figure class="alignnone">
+									<img src="{% static 'images/backgroundimages/Mission-Free-Download-PNG.png' %}" alt="">
+								</figure>
+							</div> 
+
+						</div>
+						<div class="row">
 							
-
-
-							<p>To build a premier, world-class organization in order to cater to the needs of the common man.
+							<p style="padding-bottom: 200px; color: rgb(255, 255, 255); margin: 30px;">To build a premier, world-class organization in order to cater to the needs of the common man.
 
 								Manoeuvring the human resources with innovation, integrity, credibility, quality, and quantitative values.
 								
@@ -94,17 +202,20 @@
 								
 							</p>
 						</div>
-							<div class="col-md-6">
-								<figure class="alignnone">
-									<img src="{% static 'images/CNE LOGO.png' %}" alt="">
-								</figure>
-							</div>
+					 <div class="row"> -->
+							
+
+
+							
+						<!-- </div> -->
+							
 
 							<!-- <div class="spacer-sm"></div>
 							
 							<a href="#" class="btn btn-default">Read More</a> -->
 						
-					</div>
+					<!-- </div> -->
+				</section>
 
 					<!-- <div class="row">
 						<div class="col-md-6">
@@ -245,13 +356,13 @@
 								</div>
 							</div>
 						</div>	 -->
-<section>
+            <section class="value">
 						<div class="row">
 							<h2 style="font-size: 54px; text-align: center; color: rgb(241, 232, 43);">Our Core Values</h2>
 							<div class="col-md-6">
 								<div class="title-accent">
 										<figure class="alignnone">
-											<img class="fadeinout" src="{% static 'images/CNE LOGO.png' %}" alt="">
+											<img src="../static/images/backgroundimages/our-core-values-symbol-concept-words-wooden-blocks-beautiful-grey-background-business-copy-space-226236400.webp" alt="">
 										</figure>
 									</div>
 	
@@ -261,7 +372,7 @@
 						
 							<!-- <span class="dropcap dropcap__rounded">1</span>
 							<h6>Lorem Ipsum Dolor Sit Amet</h6> -->
-							<p>Delivering products that would be the front
+							<p style="color: white;">Delivering products that would be the front
 
 								runners in the herbal sector.
 							</p>
@@ -270,7 +381,7 @@
 
 							<!-- <span class="dropcap dropcap__rounded">2</span>
 							<h6>Donec fermentum eros</h6> -->
-							<p>Instigating a thriving business that maintains a balance
+							<p style="color: white;">Instigating a thriving business that maintains a balance
 								between environmental and social health arc.
 							</p>
 
@@ -278,7 +389,7 @@
 
 							<!-- <span class="dropcap dropcap__rounded">3</span>
 							<h6>Praesent ante</h6> -->
-							<p>We vouch for fair trade in all our endeavours, profits,
+							<p style="color: white;">We vouch for fair trade in all our endeavours, profits,
 
 								and dealings.
 							</p>
@@ -287,7 +398,7 @@
 
 							<!-- <span class="dropcap dropcap__rounded">3</span>
 							<h6>Praesent ante</h6> -->
-							<p>Establishing a stable, qualitative business that would mark
+							<p style="color: white;">Establishing a stable, qualitative business that would mark
 								a significant amount of change globally, and put Ayurveda
 
 								in the highest ranking.
@@ -298,20 +409,22 @@
 					</div>
 				</section>
 
+				<section class="manage">
+
 					<div class="title-accent">
-						<b><h2 style="text-align: center; font-size: 40px;">Management</h2></b>
+						<b><h2 style="text-align: center; font-size: 40px; font-weight: 100; color: rgb(247, 243, 27);">Management</h2></b>
 					</div>
 					<ul class="team-list row">
 						<li class="team-item col-md-6">
 							<figure class="alignnone">
-								<a href="#"><img src="../static/images/personalprofiles/number-258-red-3d-illustration-260nw-2218017511.webp" alt=""></a>
+								<a href="#"><img src="../static/images/personalprofiles/AR-LATEST.webp" alt=""></a>
 							</figure>
 							<header class="team-head">
-								<h2><span class="team-head-info" style="text-align: center;">CEO</span></h2>
-								<h4 class="team-name" style="text-align: center;">Mr. Arjun Rajkumar</h4>
+								<h2><span class="team-head-info" style="text-align: center; color: white;">CEO</span></h2>
+								<h4 class="team-name" style="text-align: center; color: white;">Mr. Arjun Rajkumar</h4>
 								<ul class="team-social list-unstyled">
 									<li style="text-align: center;">
-										<i class="fa fa-envelope-o"></i><a 
+										<i class="fa fa-envelope-o"></i><a style="color: white;"
 											href="mailto:johndoe@dan-fisher.com">arjun@chinninambi.com</a>
 									</li>
 									<!-- <li>
@@ -320,7 +433,7 @@
 								</ul>
 							</header>
 							<div class="team-excerpt">
-								<p>Coming from a family of Entrepreneurs, Mr.
+								<p style="color: white; margin: 10px;">Coming from a family of Entrepreneurs, Mr.
 									Arjun Rajkumar, an efficient persona par
 									excellence, needless to say, is hardworking
 									and a talented youngster, with a steer and
@@ -356,14 +469,14 @@
 						</li>
 						<li class="team-item col-md-6">
 							<figure class="alignnone">
-								<a href="#"><img src="../static/images/personalprofiles/number-258-red-3d-illustration-260nw-2218017511.webp" class="imgsize" alt=""></a>
+								<a href="#"><img src="../static/images/personalprofiles/KRISHIKA-_1_1.webp" alt=""></a>
 							</figure>
 							<header class="team-head">
-								<h2><span class="team-head-info" style="text-align: center;">COO</span></h2>
-								<h4 class="team-name" style="text-align: center;">Mrs.Krishika</h4>
+								<h2><span class="team-head-info" style="text-align: center;color: white;">COO</span></h2>
+								<h4 class="team-name" style="text-align: center; color: white;">Mrs.Krishika</h4>
 								<ul class="team-social list-unstyled">
 									<li style="text-align: center;">
-										<i class="fa fa-envelope-o"></i><a
+										<i class="fa fa-envelope-o"></i><a style="color: white;"
 											href="mailto:mikesmith@dan-fisher.com">krishika@gmail.com</a>
 									</li>
 									<!-- <li style="text-align: center;">
@@ -372,7 +485,7 @@
 								</ul>
 							</header>
 							<div class="team-excerpt">
-								<p>
+								<p style="color: white; margin: 10px;">
 									Sister of Arjun Rajkumar, Krishika, a
 									vibrant, talented, and extraordinarily
 									skilled persona, graduated in Business
@@ -437,6 +550,9 @@
 
 				</div>
 			</section>
+				
+			
+			
 			<!-- Page Content / End -->
 
 

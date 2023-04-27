@@ -18,12 +18,27 @@
         animation-delay: 0s;
         animation-iteration-count: 1;
         animation-name: slideInLeft;
-        background: #c0f013;
+        background: #18750c;
         /* padding-bottom: 40px; */
+        background-image: url('../static/images/backgroundimages/local-brands.webp');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+			
+			/* margin: 70px -100% 70px -100%;
+	padding: 20% 100% 0 100%; */
+	background-position: 0 0;
+	
+	-webkit-background-size: cover;
+	
+	position: relative;
+       
+       
       }
       body {
         margin: 0;
         font-family: "Segoe UI", Arial, Helvetica, Sans Serif;
+        
       }
       a {
         text-decoration: none;
@@ -36,7 +51,10 @@
   </head>
   <body>
     <header class="hea">
-        <h2 style="text-align: center; font-size: 54px;" >About Chinninambi</h2>
+      
+      <div>
+        <h2 style="text-align: center; font-size: 54px; color: #d4f214;" >About Chinninambi</h2>
+      </div>
         <div class="col-md-6">
             <figure class="alignnone">
                 <img src="{% static 'images/CNE LOGO.png' %}" alt="">
@@ -53,6 +71,7 @@
                 are unique and efficient.
             </p>
         </div>
+        
     </header>
   </body>
 </html>
