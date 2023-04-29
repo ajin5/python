@@ -9,7 +9,10 @@ def about(request):
     return render(request, 'about.html' ) 
 
 def brands(request):
-    return render(request, 'brands.html' )    
+    return render(request, 'brands.html' ) 
+
+def founders(request):
+    return render(request, 'founders.html')     
 
 def contacts(request):
     if request .method == 'POST' :
