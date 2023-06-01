@@ -1,3 +1,4 @@
+{% extends 'base.html' %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +11,7 @@
 </head>
 
 <body>
-    {% include 'header.html' %}
+    {% block content %}
 
 
 
@@ -404,7 +405,7 @@ Made from a unique blend of 8 essential volatile oils of herbal origin, it relie
 
 
 
-        {% include 'footer.html' %}
+        {% endblock %}
 </body>
 
 </html>

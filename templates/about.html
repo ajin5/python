@@ -1,3 +1,4 @@
+{% extends 'base.html'%}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -16,14 +17,14 @@
 
 @keyframes fadeinout
 {
-  0%{
+  0px{
     opacity:0;
   }
-  50%
+  50px
   {
     opacity:1;
   }
-  100%
+  100px
   {
     opacity:0;
   }
@@ -45,8 +46,8 @@
             background-attachment: fixed;  
             background-size: cover;
 			
-			margin: 70% -100% 70% -100%;
-	padding: 20% 100% 0 100%;
+			margin: 70px -100px 70px -100px;
+	padding: 20px 100px 0 100px;
 	background-position: 0 0;
 	
 	-webkit-background-size: cover;
@@ -55,12 +56,12 @@
 	
 		}
 		.viba{
-			background-color: rgba(47,71,65,255);
+			
             background-repeat: no-repeat;
             background-attachment: fixed;  
             background-size: cover;
-			margin: 70% -100% 70% -100%;
-	padding: 0 100% 0 100%;
+			margin: 70px -100px 70px -100px;
+	padding: 0 100px 0 100px;
 	
 	background-position: 0 0;
 	
@@ -69,13 +70,13 @@
 	position: relative;
 		}
 		.value{
-			background-image: url('../static/images/backgroundimages/local-brands.webp');
+			
             background-repeat: no-repeat;
             background-attachment: fixed;  
             background-size: cover;
 			
-			/* margin: 70% -100% 70% -100%;
-	padding: 20% 100% 0 100%; */
+			/* margin: 70px -100px 70px -100px;
+	padding: 20px 100px 0 100px; */
 	background-position: 0 0;
 	
 	-webkit-background-size: cover;
@@ -85,13 +86,13 @@
 		}
 
 		.manage{
-			background-image: url('../static/images/backgroundimages/pexels-pixabay-268976.jpg');
+			
             background-repeat: no-repeat;
             background-attachment: fixed;  
             background-size: cover;
 			
-			/* margin: 70% -100% 70% -100%;
-	padding: 20% 100% 0 100%; */
+			/* margin: 70px -100px 70px -100px;
+	padding: 20px 100px 0 100px; */
 			background-position: 0 0;
 	
 			-webkit-background-size: cover;
@@ -103,12 +104,13 @@
 </head>
 
 <body>
-	{% include 'header.html' %}
+	{% block content %}
 
 
 
 		<!-- Main -->
 		<div class="main" role="main">
+
 
 
 
@@ -118,16 +120,16 @@
 
 					{% include 'keyframanimation.html' %}
 					</div>
-<section class="viba">
+<section class="viba" style="background-color: rgba(47,71,65,255);">
 					<div class="row">
 						<div class="col-md-6">
-						<p style="font-size: 89%; font-weight: 70; justify-content: center; color: #f4d3b3;  padding-top: 50%; padding-left: 50%; font-family: 'Bungee Spice', cursive, sans-serif; margin: 100%;">Our <br>vision</p>
+						<p style="font-size: 89px; font-weight: 70; justify-content: center; color: #f4d3b3;  padding-top: 50px; padding-left: 50px; font-family: 'Bungee Spice', cursive, sans-serif; margin: 100px;">Our <br>vision</p>
 					</div>
 						<div class="col-md-6">
 							
 
 
-							<p style=" color: rgb(255, 255, 255); margin: 100%; padding-top: 100%; padding:50%;">To build a premier, world-class organization in order to cater to the needs of the common man.
+							<p style=" color: rgb(255, 255, 255); margin: 100px; padding-top: 100px; padding:50px;">To build a premier, world-class organization in order to cater to the needs of the common man.
 
 								Manoeuvring the human resources with innovation, integrity, credibility, quality, and quantitative values.
 								
@@ -152,13 +154,13 @@
 					</div>
 					<div class="row">
 						<div class="col-md-6">
-						<p style="font-size: 89%; font-weight: 70; justify-content: center; color: #f4d3b3;   padding-left: 50%; padding-top: 30%; font-family: 'Bungee Spice', cursive, sans-serif; margin: 100%;">Our<br> Mission</p>
+						<p style="font-size: 89px; font-weight: 70; justify-content: center; color: #f4d3b3;   padding-left: 50px; padding-top: 30px; font-family: 'Bungee Spice', cursive, sans-serif; margin: 100px;">Our<br> Mission</p>
 					</div>
 						<div class="col-md-6">
 							
 
 
-							<p style="color: rgb(255, 255, 255); margin: 100%; padding-top: 100%; padding:50%; padding-bottom: 20%;">
+							<p style="color: rgb(255, 255, 255); margin: 100px; padding-top: 100px; padding:50px; padding-bottom: 20px;">
 								To source value-added products built with our heritage and upgrade them to today's standards. To make it available to consumers from different walks of life. To set state of art standards for products packaging, distribution, E-commerce and innovative and new marketing methods and tools.
 								
 								</p>
@@ -177,18 +179,18 @@
 					</div>
 				
 					<!-- <section class="ba">
-						<h2 style="font-size: 54%; text-align: center; color: rgb(73, 225, 242);">Our Mission</h2>
+						<h2 style="font-size: 54px; text-align: center; color: rgb(73, 225, 242);">Our Mission</h2>
 						<div class="row">
 							<div>
 								<figure class="alignnone">
-									<img src="{% static 'images/backgroundimages/Mission-Free-Download-PNG.png' %}" alt="">
+									<img src="{px static 'images/backgroundimages/Mission-Free-Download-PNG.png' px}" alt="">
 								</figure>
 							</div> 
 
 						</div>
 						<div class="row">
 							
-							<p style="padding-bottom: 200%; color: rgb(255, 255, 255); margin: 30%;">To build a premier, world-class organization in order to cater to the needs of the common man.
+							<p style="padding-bottom: 200px; color: rgb(255, 255, 255); margin: 30px;">To build a premier, world-class organization in order to cater to the needs of the common man.
 
 								Manoeuvring the human resources with innovation, integrity, credibility, quality, and quantitative values.
 								
@@ -217,7 +219,7 @@
 					<!-- <div class="row">
 						<div class="col-md-6">
 							<figure class="alignnone">
-								<img src="{% static 'images/CNE LOGO.png' %}" alt="">
+								<img src="{px static 'images/CNE LOGO.png' px}" alt="">
 							</figure>
 						</div>
 						<div class="col-md-6">
@@ -245,7 +247,7 @@
 					<div class="row">
 						<div class="col-md-6">
 							<figure class="alignnone">
-								<img class="fadeinout" src="{% static 'images/CNE LOGO.png' %}" alt="">
+								<img class="fadeinout" src="{px static 'images/CNE LOGO.png' px}" alt="">
 							</figure>
 						</div>
 						<div class="col-md-6">
@@ -319,43 +321,43 @@
 							</div>
 							<div class="progress">
 								<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-									aria-valuemax="100" style="width: 90%;">
+									aria-valuemax="100" style="width: 90px;">
 									<span class="progress-label">Distributions</span>
-									90%
+									90px
 								</div>
 							</div>
 							<div class="progress">
 								<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-									aria-valuemax="100" style="width: 95%;">
+									aria-valuemax="100" style="width: 95px;">
 									<span class="progress-label">Branding &amp; Identity</span>
-									95%
+									95px
 								</div>
 							</div>
 							<div class="progress">
 								<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-									aria-valuemax="100" style="width: 60%;">
+									aria-valuemax="100" style="width: 60px;">
 									<span class="progress-label">Direct Marketing</span>
-									60%
+									60px
 								</div>
 							</div>
 							<div class="progress">
 								<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-									aria-valuemax="100" style="width: 90%;">
+									aria-valuemax="100" style="width: 90px;">
 									<span class="progress-label">Online Marketing</span>
-									90%
+									90px
 								</div>
 							</div>
 							<div class="progress">
 								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-									aria-valuemax="100" style="width: 70%;">
+									aria-valuemax="100" style="width: 70px;">
 									<span class="progress-label">Top Level</span>
-									70%
+									70px
 								</div>
 							</div>
 						</div>	 -->
-            <section class="value">
+            <section class="value" style="background-image: url('../static/images/backgroundimages/local-brands.webp');">
 						<div class="row">
-							<h2 style="font-size: 54%; text-align: center; color: #f4d3b3;">Our Core Values</h2>
+							<h2 style="font-size: 54px; text-align: center; color: #f4d3b3;">Our Core Values</h2>
 							<div class="col-md-6">
 								<div class="title-accent">
 										<figure class="alignnone">
@@ -369,7 +371,7 @@
 						
 							<!-- <span class="dropcap dropcap__rounded">1</span>
 							<h6>Lorem Ipsum Dolor Sit Amet</h6> -->
-							<p style="color: white; padding-top: 50%;">Delivering products that would be the front
+							<p style="color: white; padding-top: 50px;">Delivering products that would be the front
 
 								runners in the herbal sector.
 							</p>
@@ -406,12 +408,12 @@
 					</div>
 				</section>
 
-				<section class="manage">
+				<section class="manage" style="background-image: url('../static/images/backgroundimages/pexels-pixabay-268976.jpg');">
 					<div>
-						<h2 style="color: #f4d3b3; text-align: center; font-size: 90%; font-weight: 20%; font-weight: bold;">Values & Beliefs</h2>
+						<h2 style="color: #f4d3b3; text-align: center; font-size: 90px; font-weight: 20px; font-weight: bold;">Values & Beliefs</h2>
 					</div>
 					<div>
-						<p style="color: rgb(250, 250, 250); text-align: center; font-family: 'Timmana', sans-serif; margin: 50%;">
+						<p style="color: rgb(250, 250, 250); text-align: center; font-family: 'Timmana', sans-serif; margin: 50px;">
 							Successful organizations are founded on strong value systems. Chinni Nambi has the following 6 Values <br> based on which all interactions within and outside the organization takes place
 						</p>
 					</div>
@@ -419,12 +421,12 @@
 						
 						<div class="col-md-6 ">
 						
-							<h3 style="font-size: 50%; padding: 50%; margin: 50%; margin-top: 90%;
-							font-weight: 70%; text-align: center;
+							<h3 style="font-size: 50px; padding: 50px; margin: 50px; margin-top: 90px;
+							font-weight: 70px; text-align: center;
 color: rgb(229, 243, 29); font-family: cursive;">1. Behaviour</h3>
 </div>
 <div class="col-md-6">
-							<p style="padding: 70%; margin: 70%; color: white; font-family: 'Timmana', sans-serif; justify-content: center;">
+							<p style="padding: 70px; margin: 70px; color: white; font-family: 'Timmana', sans-serif; justify-content: center;">
 								We uphold highest standards of business ethics and corporate governance. We are honest and candid in all our interactions. We demonstrate integrity both individually and collectively.
 							</p>
 						</div>
@@ -432,14 +434,14 @@ color: rgb(229, 243, 29); font-family: cursive;">1. Behaviour</h3>
 						</div>
 						<div class="row">
 							<div class="col-md-6">
-								<p style="padding: 70%; margin: 70%; color: white; font-family: 'Timmana', sans-serif; justify-content: center;">
+								<p style="padding: 70px; margin: 70px; color: white; font-family: 'Timmana', sans-serif; justify-content: center;">
 									We stand out by excelling in execution. We demonstrate quality with speed. We are intolerant to mediocrity. We embrace technology to gain competitive advantage. We upskill, learn and coach to improve continuously.
 								</p>
 							</div>
 						<div class="col-md-6">
 						
-							<h3 style="font-size: 50%; padding: 50%; margin: 50%; margin-top: 90%;
-							font-weight: 70%; text-align: center;
+							<h3 style="font-size: 50px; padding: 50px; margin: 50px; margin-top: 90px;
+							font-weight: 70px; text-align: center;
 color: rgb(229, 243, 29); font-family: cursive;">2. Excellence</h3>
 </div>
 
@@ -449,12 +451,12 @@ color: rgb(229, 243, 29); font-family: cursive;">2. Excellence</h3>
 						
 							<div class="col-md-6">
 							
-								<h3 style="font-size: 50%; padding: 50%; margin: 50%; margin-top: 90%;
-								font-weight: 70%; text-align: center;
+								<h3 style="font-size: 50px; padding: 50px; margin: 50px; margin-top: 90px;
+								font-weight: 70px; text-align: center;
 	color: rgb(229, 243, 29); font-family: cursive;">3. Innovation</h3>
 	</div>
 	<div class="col-md-6">
-								<p style="padding: 70%; margin: 70%; color: white; font-family: 'Timmana', sans-serif; justify-content: center;">
+								<p style="padding: 70px; margin: 70px; color: white; font-family: 'Timmana', sans-serif; justify-content: center;">
 									We make it simple for consumers. Simplicity gets results. We differentiate to delight. We believe scarcity breeds innovation. It’s costly not to innovate.
 								</p>
 							</div>
@@ -463,14 +465,14 @@ color: rgb(229, 243, 29); font-family: cursive;">2. Excellence</h3>
 						
 							<div class="row">
 								<div class="col-md-6">
-									<p style="padding: 70%; margin: 70%; color: white; font-family: 'Timmana', sans-serif; justify-content: center;">
+									<p style="padding: 70px; margin: 70px; color: white; font-family: 'Timmana', sans-serif; justify-content: center;">
 										We are curious to learn. We are open to ideas from anywhere. We value critique from all stakeholders. We embrace diversity.
 									</p>
 								</div>
 							<div class="col-md-6">
 							
-								<h3 style="font-size: 50%; padding: 50%; margin: 50%; margin-top: 90%;
-								font-weight: 70%; text-align: center;
+								<h3 style="font-size: 50px; padding: 50px; margin: 50px; margin-top: 90px;
+								font-weight: 70px; text-align: center;
 	color: rgb(229, 243, 29); font-family: cursive;">4. OPENNESS</h3>
 	</div>
 	
@@ -480,12 +482,12 @@ color: rgb(229, 243, 29); font-family: cursive;">2. Excellence</h3>
 						
 								<div class="col-md-6">
 								
-									<h3 style="font-size: 50%; padding: 50%; margin: 50%; margin-top: 90%;
-									font-weight: 70%; text-align: center;
+									<h3 style="font-size: 50px; padding: 50px; margin: 50px; margin-top: 90px;
+									font-weight: 70px; text-align: center;
 		color: rgb(229, 243, 29); font-family: cursive;">5. OWNERSHIP</h3>
 		</div>
 		<div class="col-md-6">
-									<p style="padding: 70%; margin: 70%; color: white; font-family: 'Timmana', sans-serif; justify-content: center;">
+									<p style="padding: 70px; margin: 70px; color: white; font-family: 'Timmana', sans-serif; justify-content: center;">
 										We take accountability both individually and collectively. We don’t offer excuses. We have a high stake in company’s well-being.
 									</p>
 								</div>
@@ -494,14 +496,14 @@ color: rgb(229, 243, 29); font-family: cursive;">2. Excellence</h3>
 						
 								<div class="row">
 									<div class="col-md-6">
-										<p style="padding: 70%; margin: 70%; color: white; font-family: 'Timmana', sans-serif; justify-content: center;">
+										<p style="padding: 70px; margin: 70px; color: white; font-family: 'Timmana', sans-serif; justify-content: center;">
 											We dare to think big and bold. We think out of the box. We break barriers otherwise thought impossible.
 										</p>
 									</div>
 								<div class="col-md-6">
 								
-									<h3 style="font-size: 50%; padding: 50%; margin: 50%; margin-top: 90%;
-									font-weight: 70%; text-align: center;
+									<h3 style="font-size: 50px; padding: 50px; margin: 50px; margin-top: 90px;
+									font-weight: 70px; text-align: center;
 		color: rgb(229, 243, 29); font-family: cursive;">6. THINK BIG</h3>
 		</div>
 		
@@ -512,7 +514,7 @@ color: rgb(229, 243, 29); font-family: cursive;">2. Excellence</h3>
 					
 
 					<!-- <div class="title-accent">
-						<b><h2 style="text-align: center; font-size: 40%; font-weight: 100; color: rgb(247, 243, 27);">Management</h2></b>
+						<b><h2 style="text-align: center; font-size: 40px; font-weight: 100; color: rgb(247, 243, 27);">Management</h2></b>
 					</div> -->
 					<!-- <ul class="team-list row">
 						<li class="team-item col-md-6">
@@ -531,7 +533,7 @@ color: rgb(229, 243, 29); font-family: cursive;">2. Excellence</h3>
 								</ul>
 							</header>
 							<div class="team-excerpt">
-								<p style="color: white; margin: 10%;">Coming from a family of Entrepreneurs, Mr.
+								<p style="color: white; margin: 10px;">Coming from a family of Entrepreneurs, Mr.
 									Arjun Rajkumar, an efficient persona par
 									excellence, needless to say, is hardworking
 									and a talented youngster, with a steer and
@@ -581,7 +583,7 @@ color: rgb(229, 243, 29); font-family: cursive;">2. Excellence</h3>
 								</ul>
 							</header>
 							<div class="team-excerpt">
-								<p style="color: white; margin: 10%;">
+								<p style="color: white; margin: 10px;">
 									Sister of Arjun Rajkumar, Krishika, a
 									vibrant, talented, and extraordinarily
 									skilled persona, graduated in Business
@@ -635,7 +637,7 @@ color: rgb(229, 243, 29); font-family: cursive;">2. Excellence</h3>
 		
 		<!-- Main / End -->
 	
-	{% include 'footer.html' %}
+	{% endblock %}
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+{% extends 'base.html' %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +15,7 @@
 
 	
 <body>
-	{% include 'header.html' %}
+	{% block content %}
 				<!-- Slider
 			================================================== -->
 			<div class="tp-banner-holder">
@@ -497,6 +498,6 @@
 		});
 	</script>
 		
-	{% include 'footer.html' %}
+	{% endblock %}
 </body>
 </html>
